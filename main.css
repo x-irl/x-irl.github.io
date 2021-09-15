@@ -1638,18 +1638,17 @@ article {
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		/* -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out; */
+		/* -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out; */
+		/* -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out; */
+		/* transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out; */
 		border-bottom: none;
 		color: #4e79a7;
 		text-decoration: none;
-	}
-
+	}		  
+		a:focus,
 		a:hover {
-			border-bottom-color: transparent;
-			color: #4e79a7 !important;
+			color: #f09228;
 			text-decoration: none;
 		}
 
