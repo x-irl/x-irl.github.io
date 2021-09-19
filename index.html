@@ -38,7 +38,7 @@
         <div id="main" style="padding-bottom:1em; padding-top: 2em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
             <section id="four">
                 <!-- Title -->
-                <h1 style="text-align: center; margin-bottom: 3px;"><font color="4e79a7">XIRL:</font> Cross-embodiment Inverse Reinforcement Learning</h1>
+                <h1 style="text-align: center; margin-bottom: 3px; padding-top: 20px;"><font color="4e79a7">XIRL:</font> Cross-embodiment Inverse Reinforcement Learning</h1>
                 <h3 style="text-align: center;margin-bottom: 25px;">Conference on Robot Learning (CoRL) 2021</h3>
                 <div style="clear:both;"></div>
 
@@ -46,21 +46,33 @@
                 <div style="text-align:center;">
                     <a href="https://arxiv.org/abs/2106.03911" class="button">Paper</a>
                     <a href="https://github.com/google-research/google-research/tree/master/xirl" class="button">Code</a>
-                    <!-- <a href="" class="button">Video</a> -->
-                    <!-- <a href="" class="button">Blog</a> -->
                 </div>
                 <br>
 
-                <p align="justify">We investigate the visual <font color="4e79a7">cross-embodiment</font> imitation setting, in which agents learn policies from videos of other agents (such as humans) demonstrating the same task, but with stark differences in their <font color="4e79a7">embodiments</font> -- shape, actions, end-effector dynamics, etc. In this work, we demonstrate that it is possible to automatically discover and learn vision-based reward functions from cross-embodiment demonstration videos that are robust to these differences. Specifically, we present a self-supervised method for Cross-embodiment Inverse Reinforcement Learning (XIRL) that leverages <font color="4e79a7">temporal cycle-consistency</font> constraints to learn deep visual embeddings that capture task progression from offline videos of demonstrations across multiple expert agents, each performing the same task differently due to embodiment differences. Prior to our work, producing rewards from self-supervised embeddings typically required alignment with a reference trajectory, which may be difficult to acquire under stark embodiment differences. We show empirically that if the embeddings are aware of <font color="4e79a7">task progress</font>, simply taking the negative distance between the current state and goal state in the learned embedding space is useful as a reward for training policies with <font color="4e79a7">reinforcement learning</font>. We find our learned reward function not only works for embodiments seen during training, but also generalizes to entirely new embodiments. Additionally, when transferring real-world human demonstrations to a simulated robot, we find that XIRL is more sample efficient than current best methods.</p>
+                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.svg" style="width: 100%; padding-bottom: 1em;"></div>
 
-                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.svg" style="width: 100%; padding-top: 1em;"></div>
+                <p align="justify"><b>Abstract</b>. We investigate the visual <font color="4e79a7">cross-embodiment</font> imitation setting, in which agents learn policies from videos of other agents (such as humans) demonstrating the same task, but with stark differences in their <font color="4e79a7">embodiments</font> -- shape, actions, end-effector dynamics, etc. In this work, we demonstrate that it is possible to automatically discover and learn vision-based reward functions from cross-embodiment demonstration videos that are robust to these differences. Specifically, we present a self-supervised method for Cross-embodiment Inverse Reinforcement Learning (XIRL) that leverages <font color="4e79a7">temporal cycle-consistency</font> constraints to learn deep visual embeddings that capture task progression from offline videos of demonstrations across multiple expert agents, each performing the same task differently due to embodiment differences. Prior to our work, producing rewards from self-supervised embeddings typically required alignment with a reference trajectory, which may be difficult to acquire under stark embodiment differences. We show empirically that if the embeddings are aware of <font color="4e79a7">task progress</font>, simply taking the negative distance between the current state and goal state in the learned embedding space is useful as a reward for training policies with <font color="4e79a7">reinforcement learning</font>. We find our learned reward function not only works for embodiments seen during training, but also generalizes to entirely new embodiments. Additionally, when transferring real-world human demonstrations to a simulated robot, we find that XIRL is more sample efficient than current best methods.</p>
+
+                <!-- <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.svg" style="width: 100%; padding-top: 1em;"></div> -->
+
 
                 <!----------------------------------------------------------------->
                 <hr/>
                 <h3>Paper</h3>
-                <p style="">Published as an <b>Oral</b> at the <a href="https://www.robot-learning.org/">Conference on Robot Learning (CoRL) 2021</a></a><br></p>
-                <p style="margin-bottom: 15px;"><a href="https://arxiv.org/abs/2106.03911">[arXiv]</a> - <a href="https://openreview.net/forum?id=RO4DM85Z4P7">[OpenReview]</a><br></p>
-                <div class="12u$"><a href="https://arxiv.org/abs/2106.03911"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.png"/></span></a></div>
+
+                <p><b>XIRL: Cross-embodiment Inverse Reinforcement Learning</b></p>
+                <p><i>Kevin Zakka, Andy Zeng, Pete Florence, Jonathan Tompson, Jeannette Bohg, Debidatta Dwibedi</i></p>
+                <p>Conference on Robot Learning (CoRL) 2021</p>
+                <p><a href="https://arxiv.org/abs/2106.03911">[arXiv]</a>  <a href="https://openreview.net/forum?id=RO4DM85Z4P7">[OpenReview]</a><br></p>
+                <!-- <div class="12u$"><a href="https://arxiv.org/abs/2106.03911"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.png"/></span></a></div> -->
+
+                <hr/>
+                <div class="row">
+                    <h3>Video Summary</h3>
+                    <div class="12u$ 12u$(xsmall)" style="text-align: center;">
+                        Coming soon...
+                    </div>
+                </div>
 
                 <hr>
                 <div class="row" style="margin-bottom: -30px;">
@@ -104,33 +116,6 @@
                 <p style="font-size: 12pt;margin-top: 2em;margin-bottom: -20px; text-align: center;"><sup>1</sup> Robotics at Google&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup> Stanford University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup></sup><sup>3</sup> UC Berkeley&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup></sup></p>
 
                 <!----------------------------------------------------------------->
-                <!-- <hr/>
-                <div class="row">
-                    <h3>Technical Summary Video</h3>
-                    <div class="12u$ 12u$(xsmall)" style="text-align: center;">
-                        Coming soon...
-                    </div>
-                </div> -->
-
-                <!----------------------------------------------------------------->
-                <hr/>
-                <h3>X-REAL Dataset</h3>
-                <p style="margin-bottom: 15px;">
-                    We collect a real-world dataset named <font color="4e79a7">X-REAL</font> (Cross-embodiment Real-world demonstrations), which contains 93 demonstration videos of different embodiments (manifested as different manipulator end-effectors) solving the same manipulation task in the real-world: <i>transferring five pens to two cups consecutively</i>. This is a multi-step manipulation task where the pens on the table need to be lifted to one cup and then moved again to a separate cup. The different end-effectors consist in a human hand as well as 6 tools purchased from Amazon. We showcase some of the embodiments below.
-                </p>
-
-                <div class="box alt">
-                    <div class="row">
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/one_hand_five_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">One Hand Five Fingers</h5></div>
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/one_hand_two_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">One Hand Two Fingers</h5></div>
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/two_hands_two_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Two Hands Two Fingers</h5></div>
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/rms.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">RMS Grabber</h5></div>
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/tongs.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Tongs</h5></div>
-                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/quick_grip.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Irwin Quick-Grip</h5></div>
-                    </div>
-                </div>
-
-                <!----------------------------------------------------------------->
                 <hr/>
                 <h3>X-MAGICAL Benchmark</h3>
                 <p>We introduce a benchmark extension of MAGICAL, called <a href="https://github.com/kevinzakka/x-magical">x-MAGICAL</a>, specifically geared towards cross-embodiment imitation. The goal of X-MAGICAL is to test how well imitation or reward learning techniques can adapt to systematic embodiment gaps between the demonstrator and the learner. For example, in the Sweeping task, some agents can sweep all debris in one motion while others need to sweep them one at a time. These differences in execution speeds and state-action trajectories pose challenges for current LfD techniques, and the ability to generalize across embodiments is precisely what this benchmark evaluates.</p>
@@ -161,6 +146,23 @@
                     </div>
                 </div>
                 <br>
+
+                <hr/>
+                <h3>X-REAL Dataset</h3>
+                <p style="margin-bottom: 15px;">
+                    We collect a real-world dataset named <font color="4e79a7">X-REAL</font> (Cross-embodiment Real-world demonstrations), which contains 93 demonstration videos of different embodiments (manifested as different manipulator end-effectors) solving the same manipulation task in the real-world: <i>transferring five pens to two cups consecutively</i>. This is a multi-step manipulation task where the pens on the table need to be lifted to one cup and then moved again to a separate cup. The different end-effectors consist in a human hand as well as 6 tools purchased from Amazon. We showcase some of the embodiments below.
+                </p>
+
+                <div class="box alt">
+                    <div class="row">
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/one_hand_five_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">One Hand Five Fingers</h5></div>
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/one_hand_two_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">One Hand Two Fingers</h5></div>
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/two_hands_two_fingers.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Two Hands Two Fingers</h5></div>
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/rms.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">RMS Grabber</h5></div>
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/tongs.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Tongs</h5></div>
+                        <div class="4u"><video class="image fit" style="margin-bottom: 0.5em;" controls><source src="./images/videos/quick_grip.MP4" type="video/mp4">Your browser does not support this video.</video><h5 style="color: #a2a2a2; margin-bottom: 1em; text-align: center;">Irwin Quick-Grip</h5></div>
+                    </div>
+                </div>
 
                 <hr/>
                 <h3>Qualitative Results</h3>
