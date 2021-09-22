@@ -49,30 +49,26 @@
                 </div>
                 <br>
 
-                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.svg" style="width: 100%; padding-bottom: 1em;"></div>
+                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.gif" style="width: 75%; padding-bottom: 1em;"></div>
 
                 <p align="justify"><b>Abstract</b>. We investigate the visual <font color="4e79a7">cross-embodiment</font> imitation setting, in which agents learn policies from videos of other agents (such as humans) demonstrating the same task, but with stark differences in their <font color="4e79a7">embodiments</font> -- shape, actions, end-effector dynamics, etc. In this work, we demonstrate that it is possible to automatically discover and learn vision-based reward functions from cross-embodiment demonstration videos that are robust to these differences. Specifically, we present a self-supervised method for Cross-embodiment Inverse Reinforcement Learning (XIRL) that leverages <font color="4e79a7">temporal cycle-consistency</font> constraints to learn deep visual embeddings that capture task progression from offline videos of demonstrations across multiple expert agents, each performing the same task differently due to embodiment differences. Prior to our work, producing rewards from self-supervised embeddings typically required alignment with a reference trajectory, which may be difficult to acquire under stark embodiment differences. We show empirically that if the embeddings are aware of <font color="4e79a7">task progress</font>, simply taking the negative distance between the current state and goal state in the learned embedding space is useful as a reward for training policies with <font color="4e79a7">reinforcement learning</font>. We find our learned reward function not only works for embodiments seen during training, but also generalizes to entirely new embodiments. Additionally, when transferring real-world human demonstrations to a simulated robot, we find that XIRL is more sample efficient than current best methods.</p>
-
-                <!-- <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.svg" style="width: 100%; padding-top: 1em;"></div> -->
-
 
                 <!----------------------------------------------------------------->
                 <hr/>
                 <h3>Paper</h3>
 
-                <p><b>XIRL: Cross-embodiment Inverse Reinforcement Learning</b></p>
-                <p><i>Kevin Zakka, Andy Zeng, Pete Florence, Jonathan Tompson, Jeannette Bohg, Debidatta Dwibedi</i></p>
-                <p>Conference on Robot Learning (CoRL) 2021</p>
-                <p><a href="https://arxiv.org/abs/2106.03911">[arXiv]</a>  <a href="https://openreview.net/forum?id=RO4DM85Z4P7">[OpenReview]</a><br></p>
-                <!-- <div class="12u$"><a href="https://arxiv.org/abs/2106.03911"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.png"/></span></a></div> -->
+                <p>To appear at the Conference on Robot Learning (CoRL) 2021</p>
+                <p style="margin-bottom: 0em;">Latest version (Sept. 2021): <a href="https://arxiv.org/abs/2106.03911">arXiv:2106.03911 [cs.RO]</a></p>
+                <p style="margin-bottom: 1em;">OpenReview submission: <a href="https://openreview.net/forum?id=RO4DM85Z4P7">here</a>
+                <div class="12u$"><a href="https://arxiv.org/abs/2106.03911"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.png"/></span></a></div>
 
-                <hr/>
+                <!-- <hr/>
                 <div class="row">
                     <h3>Video Summary</h3>
                     <div class="12u$ 12u$(xsmall)" style="text-align: center;">
                         Coming soon...
                     </div>
-                </div>
+                </div> -->
 
                 <hr>
                 <div class="row" style="margin-bottom: -30px;">
