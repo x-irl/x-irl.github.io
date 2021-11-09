@@ -1645,7 +1645,7 @@ article {
 		border-bottom: none;
 		color: #4e79a7;
 		text-decoration: none;
-	}		  
+	}
 		a:focus,
 		a:hover {
 			color: #f09228;
@@ -2469,7 +2469,7 @@ article {
 		font-weight: 500;
 		height: calc(2.75em + 3px);
 		line-height: 2.75em;
-		min-width: 5em;
+		min-width: 7em;
 		padding: 0 0em;
 		text-align: center;
 		text-decoration: none;
