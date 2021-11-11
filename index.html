@@ -38,7 +38,7 @@
         <div id="main" style="padding-bottom:1em; padding-top: 2em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
             <section id="four">
                 <!-- Title -->
-                <h1 style="text-align: center; margin-bottom: 3px; padding-top: 20px;"><font color="4e79a7">XIRL:</font> Cross-embodiment Inverse Reinforcement Learning</h1>
+                <h1 style="text-align: center; margin-bottom: 3px; padding-top: 100px;"><font color="4e79a7">XIRL:</font> Cross-embodiment Inverse Reinforcement Learning</h1>
                 <h3 style="text-align: center;margin-bottom: 25px;">Conference on Robot Learning (CoRL) 2021</h3>
                 <div style="clear:both;"></div>
 
@@ -50,9 +50,11 @@
                 </div>
                 <br>
 
-                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.gif" style="width: 75%; padding-bottom: 1em;"></div>
-
                 <p align="justify"><b>Abstract</b>. We investigate the visual <font color="4e79a7">cross-embodiment</font> imitation setting, in which agents learn policies from videos of other agents (such as humans) demonstrating the same task, but with stark differences in their <font color="4e79a7">embodiments</font> -- shape, actions, end-effector dynamics, etc. In this work, we demonstrate that it is possible to automatically discover and learn vision-based reward functions from cross-embodiment demonstration videos that are robust to these differences. Specifically, we present a self-supervised method for Cross-embodiment Inverse Reinforcement Learning (XIRL) that leverages <font color="4e79a7">temporal cycle-consistency</font> constraints to learn deep visual embeddings that capture task progression from offline videos of demonstrations across multiple expert agents, each performing the same task differently due to embodiment differences. Prior to our work, producing rewards from self-supervised embeddings typically required alignment with a reference trajectory, which may be difficult to acquire under stark embodiment differences. We show empirically that if the embeddings are aware of <font color="4e79a7">task progress</font>, simply taking the negative distance between the current state and goal state in the learned embedding space is useful as a reward for training policies with <font color="4e79a7">reinforcement learning</font>. We find our learned reward function not only works for embodiments seen during training, but also generalizes to entirely new embodiments. Additionally, when transferring real-world human demonstrations to a simulated robot, we find that XIRL is more sample efficient than current best methods.</p>
+
+                <hr/>
+                <h3>Method</h3>
+                <div style="text-align: center; margin-top: 1em;"><img src="./images/teaser.gif" style="width: 75%; padding-bottom: 1em;"></div>
 
                 <!----------------------------------------------------------------->
                 <hr/>
@@ -211,7 +213,7 @@
                     <p>We would like to thank Alex Nichol, Nick Hynes, Sean Kirmani, Brent Yi and Jimmy Wu for fruitful technical discussions, Sam Toyer for invaluable help with setting up the simulated benchmark, and Karl Schmeckpeper for discussions and help related to RLV.</p>
 
                 <div style="text-align: center;">
-                <p style="font-size: 13px; margin-top: 30px;">If you have any questions, please feel free to contact <a href="https://kzakka.com/">Kevin Zakka</a>.</p>
+                <p style="font-size: 15px; margin-top: 30px;">If you have any questions, please feel free to contact <a href="https://kzakka.com/">Kevin Zakka</a>.</p>
                 </div>
 
             </section>
